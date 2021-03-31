@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.movie-card {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+
+.image {
+  object-fit: cover;
+  max-width: 100%;
+  height: 400px;
+}
+
+.image-details {
+  position: absolute;
+  padding: 16px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.623);
+  transition: 0.5s ease;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.released-date {
+  font-size: 17px;
+  padding-top: 12px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.movie-title {
+  margin: 0;
+}
+
+/*HOVER EFFECTS*/
+
+.image-details:hover {
+  opacity: 1;
+}
+
+/*MOVIE DETAILS PAGE*/
