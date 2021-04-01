@@ -68,6 +68,22 @@ body {
 }
 
 /*MOVIE DETAILS PAGE*/
+.back-button-link {
+  position: absolute;
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 21px;
+  z-index: 2;
+  bottom: 10px;
+  margin-left: 240px;
+}
+
+.back-button-link svg {
+  width: 30px;
+}
 
 .details-page-wrapper {
   display: flex;
@@ -86,7 +102,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -114,6 +130,7 @@ body {
 
 .title-rating-overwiev-container {
   max-width: 300px;
+  padding-bottom: 20px;
 }
 
 .movie-title {
@@ -139,21 +156,31 @@ body {
 @media (min-width: 667px) {
 /*MOVIE LIST/HOME PAGE*/
 
-.main-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-.movie-card {
-  width: 50%;
-}
+  .movie-card {
+    width: 50%;
+  }
 
-.title {
-  font-size: 26px;
-}
+  .title {
+    font-size: 26px;
+  }
 
 /*MOVIE DETAILS PAGE*/
+  .back-button-link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100px;
+    left: 50px;
+    top: 50px;
+    margin-left: 0;
+  }
+
   .details-container{
     flex-direction: row;
     align-items: flex-end;
@@ -178,3 +205,29 @@ body {
     padding-bottom: 50px;
   }
 }
+/*DESKTOP*/
+@media (min-width:1024px) {
+ 
+/*MOVIE LIST/HOME PAGE*/
+  .movie-card {
+    width: 25%;
+  }
+
+/*MOVIE DETAILS*/
+  .details-page-wrapper {
+    justify-content: flex-start;
+  }
+
+  .small-movie-poster {
+    min-width: 350px;
+    border: 5px solid white;
+  }
+
+  .title-rating-overwiev-container {
+    max-width: 700px;
+  }
+
+}
+
+
+
