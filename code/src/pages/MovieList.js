@@ -12,6 +12,7 @@ export const MovieList = () => {
       .then ((data) => {
         setMovies(data.results)
       })
+      .catch(err => console.error(err))
   }, [])
 
   return (

@@ -68,6 +68,14 @@ body {
 }
 
 /*MOVIE DETAILS PAGE*/
+.loading-spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .back-button-link {
   position: absolute;
   display: inline-flex;
@@ -79,10 +87,21 @@ body {
   z-index: 2;
   bottom: 10px;
   margin-left: 240px;
+  width: 150px;
 }
 
 .back-button-link svg {
   width: 30px;
+  margin: 0;
+}
+
+.back-button-link p {
+  margin: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.back-button-link:hover p {
+  margin-left: 10px;
 }
 
 .details-page-wrapper {
@@ -175,7 +194,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 100px;
     left: 50px;
     top: 50px;
     margin-left: 0;
