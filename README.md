@@ -26,4 +26,4 @@ If we had more time, we would like to continue to add more details and capacitie
 
 ## View it live
 
-Take a look at what's hot on the movies front and get your popcorn ready: https://movie-app-by-estefania-and-irina.netlify.app/
+Take a look at what's hot on the movies front and get your popcorn ready: https://goofy-lichterman-1a5f72.netlify.app
